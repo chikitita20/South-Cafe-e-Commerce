@@ -1,0 +1,95 @@
+-- South Cafe Online Ordering System Database
+-- Create database
+CREATE DATABASE IF NOT EXISTS south_cafe;
+USE south_cafe;
+
+-- Users table
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    full_name VARCHAR(100) NOT NULL,
+    phone VARCHAR(20),
+    address TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Categories table
+CREATE TABLE IF NOT EXISTS categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    description TEXT
+);
+
+-- Products table (Food items)
+CREATE TABLE IF NOT EXISTS products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    price DECIMAL(10, 2) NOT NULL,
+    category_id INT,
+    image VARCHAR(255),
+    available BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (category_id) REFERENCES categories(id)
+);
+
+-- Orders table
+CREATE TABLE IF NOT EXISTS orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    total_amount DECIMAL(10, 2) NOT NULL,
+    status ENUM('pending', 'processing', 'completed', 'cancelled') DEFAULT 'pending',
+    delivery_address TEXT,
+    contact_number VARCHAR(20),
+    notes TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- Order items table
+CREATE TABLE IF NOT EXISTS order_items (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    order_id INT NOT NULL,
+    product_id INT NOT NULL,
+    quantity INT NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (order_id) REFERENCES orders(id),
+    FOREIGN KEY (product_id) REFERENCES products(id)
+);
+
+-- Cart table
+CREATE TABLE IF NOT EXISTS cart (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    product_id INT NOT NULL,
+    quantity INT NOT NULL DEFAULT 1,
+    added_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (product_id) REFERENCES products(id),
+    UNIQUE KEY unique_cart_item (user_id, product_id)
+);
+
+-- Insert sample categories
+INSERT INTO categories (name, description) VALUES
+('Coffee', 'Hot and cold coffee beverages'),
+('Tea', 'Various tea selections'),
+('Pastries', 'Fresh baked goods'),
+('Sandwiches', 'Delicious sandwiches'),
+('Desserts', 'Sweet treats');
+
+-- Insert sample products
+INSERT INTO products (name, description, price, category_id, image) VALUES
+('Espresso', 'Rich and bold espresso shot', 3.50, 1, 'espresso.jpg'),
+('Cappuccino', 'Espresso with steamed milk and foam', 4.50, 1, 'cappuccino.jpg'),
+('Latte', 'Smooth espresso with steamed milk', 4.75, 1, 'latte.jpg'),
+('Iced Coffee', 'Refreshing cold brew coffee', 4.00, 1, 'iced_coffee.jpg'),
+('Green Tea', 'Premium green tea', 3.00, 2, 'green_tea.jpg'),
+('Chai Latte', 'Spiced tea with steamed milk', 4.25, 2, 'chai_latte.jpg'),
+('Croissant', 'Buttery, flaky croissant', 3.25, 3, 'croissant.jpg'),
+('Chocolate Muffin', 'Rich chocolate chip muffin', 3.75, 3, 'muffin.jpg'),
+('Club Sandwich', 'Triple-decker sandwich with turkey, bacon, and veggies', 8.50, 4, 'club_sandwich.jpg'),
+('BLT Sandwich', 'Classic bacon, lettuce, and tomato', 7.00, 4, 'blt.jpg'),
+('Cheesecake', 'Creamy New York style cheesecake', 5.50, 5, 'cheesecake.jpg'),
+('Brownie', 'Fudgy chocolate brownie', 4.00, 5, 'brownie.jpg');
