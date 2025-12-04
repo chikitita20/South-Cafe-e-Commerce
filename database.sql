@@ -81,7 +81,7 @@ INSERT INTO categories (name, description) VALUES
 
 -- Insert sample products
 INSERT INTO products (name, description, price, category_id, image) VALUES
-('Espresso', 'Rich and bold espresso shot', 3.50, 1, 'espresso.jpg'),
+('Hot Coffee', 'Rich and bold espresso shot', 3.50, 1, 'hotcoffee.jpg'),
 ('Cappuccino', 'Espresso with steamed milk and foam', 4.50, 1, 'cappuccino.jpg'),
 ('Latte', 'Smooth espresso with steamed milk', 4.75, 1, 'latte.jpg'),
 ('Iced Coffee', 'Refreshing cold brew coffee', 4.00, 1, 'iced_coffee.jpg'),
