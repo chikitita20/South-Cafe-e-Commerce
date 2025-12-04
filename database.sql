@@ -73,11 +73,11 @@ CREATE TABLE IF NOT EXISTS cart (
 
 -- Insert sample categories
 INSERT INTO categories (name, description) VALUES
-('Coffee', 'Hot and cold coffee beverages'),
-('Tea', 'Various tea selections'),
-('Pastries', 'Fresh baked goods'),
-('Sandwiches', 'Delicious sandwiches'),
-('Desserts', 'Sweet treats');
+('Coffee', 'Rich, aromatic brews crafted to energize, comfort, and elevate your day.'),
+('Non-Coffee', 'Refreshing beverages offering flavorful alternatives for non-coffee drink lovers.'),
+('Snacks', 'Light, tasty bites perfect for quick cravings anytime of the day.'),
+('Rice Meals', 'Hearty rice plates served with savory dishes for complete satisfying meals.'),
+('Korean Food', 'Bold, flavorful Korean dishes inspired by authentic spices, sauces, and traditions.');
 
 -- Insert sample products
 INSERT INTO products (name, description, price, category_id, image) VALUES
