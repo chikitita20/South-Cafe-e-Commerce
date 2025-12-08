@@ -99,10 +99,10 @@ include 'includes/header.php';
                                 <div class="order-item-details">
                                     <h4><?php echo htmlspecialchars($item['name']); ?></h4>
                                     <p>Quantity: <?php echo $item['quantity']; ?></p>
-                                    <p class="item-price">$<?php echo number_format($item['price'], 2); ?> each</p>
+                                    <p class="item-price">₱<?php echo number_format($item['price'], 2); ?> each</p>
                                 </div>
                                 <div class="order-item-total">
-                                    $<?php echo number_format($item['price'] * $item['quantity'], 2); ?>
+                                    ₱<?php echo number_format($item['price'] * $item['quantity'], 2); ?>
                                 </div>
                             </div>
                         <?php endforeach; ?>
@@ -117,7 +117,7 @@ include 'includes/header.php';
                             <?php endif; ?>
                         </div>
                         <div class="order-total">
-                            <h3>Total: $<?php echo number_format($order['total_amount'], 2); ?></h3>
+                            <h3>Total: ₱<?php echo number_format($order['total_amount'], 2); ?></h3>
                             <?php if (in_array($order['status'], ['pending', 'processing'])): ?>
                                 <form method="POST" action="orders.php" onsubmit="return confirm('Are you sure you want to cancel this order?');">
                                     <input type="hidden" name="order_id" value="<?php echo $order['id']; ?>">

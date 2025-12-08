@@ -102,7 +102,7 @@ include 'includes/header.php';
                         <h3><?php echo htmlspecialchars($product['name']); ?></h3>
                         <p class="product-description"><?php echo htmlspecialchars($product['description']); ?></p>
                         <div class="product-footer">
-                            <span class="price">$<?php echo number_format($product['price'], 2); ?></span>
+                            <span class="price">₱<?php echo number_format($product['price'], 2); ?></span>
                             <form method="POST" action="menu.php" class="add-to-cart-form">
                                 <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
                                 <input type="number" name="quantity" value="1" min="1" max="99" class="quantity-input">
