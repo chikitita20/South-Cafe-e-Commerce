@@ -3,7 +3,7 @@ require_once 'config.php';
 $page_title = 'Home';
 
 // Get featured products
-$query = "SELECT * FROM products WHERE available = 1 ORDER BY created_at DESC LIMIT 6";
+$query = "SELECT * FROM products WHERE available = 1 ORDER BY created_at DESC LIMIT 5";
 $result = mysqli_query($conn, $query);
 $featured_products = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
