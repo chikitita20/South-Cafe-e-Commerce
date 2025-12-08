@@ -82,10 +82,16 @@ INSERT INTO categories (name, description) VALUES
 -- Insert sample products
 INSERT INTO products (name, description, price, category_id, image) VALUES
 ('Hot Coffee', 'Rich and bold espresso shot', 75, 1, 'hot_coffee.jpg'),
-('Iced Coffee', 'Cold, rich chocolate drink delight', 85, 1, 'iced_coffee.jpg'),
-('Latte', 'Smooth espresso with steamed milk', 95, 1, 'latte.jpg'),
-('Mango Graham', 'Refreshing cold brew coffee', 85, 2, 'mango_graham.jpg'),
-('Iced Choco', 'Premium green tea', 65, 2, 'iced_choco.jpg'),
+('Iced Coffee', 'Cold, refreshing brew over ice', 85, 1, 'iced_coffee.jpg'),
+('Hot Flower Tea', 'Warm floral tea for relaxation', 95, 2, 'hot_flower_tea.jpg'),
+('Mango Graham', 'Creamy mango layered graham treat', 85, 2, 'mango_graham.jpg'),
+('Iced Choco', 'Cold, rich chocolate drink delight', 65, 2, 'iced_choco.jpg'),
+('Lemonade', 'Fresh tangy drink with citrus', 85, 2, 'lemonade.jpg'),
+('Fruit Shake', 'Cold blended fruits for refreshment', 65, 2, 'fruit_shakes.jpg'),
+('Fruit Soda', 'Fruity sparkling drink with fizz', 75, 2, 'fruit_soda.jpg'),
+('Red Velvet Classic Milktea', 'Sweet creamy red-velvet milk tea', 95, 2, 'red_velvet.jpg'),
+('Cookies and Cream Special Milk Tea', 'Creamy milk tea with cookie bits', 120, 2, 'cookies_&_cream.jpg'),
+
 
 ('Egg Drop Sandwich', 'Toasted bread filled with fluffy eggs and cheese', 115.00, 3, 'eggdrop.jpg'),
 ('Cheesecake', 'Creamy New York style cheesecake', 5.50, 5, 'cheesecake.jpg'),
@@ -105,15 +111,6 @@ INSERT INTO products (name, description, price, category_id, image) VALUES
 ('Cornbeef', 'Savory canned cornbeef', 180, 4, 'cornbeef.jpg'),
 ('Hungarian Sausage', 'Spicy smoked sausage', 180, 4, 'sausage.jpg'),
 ('Pepper Beef', 'Tender beef with pepper', 190, 4, 'pepper.jpg'),
-('Spam', 'Classic canned meat', 180, 4, 'spam.jpg'),
+('Spam', 'Classic canned meat', 180, 4, 'spam.jpg');
 
 
-
-('Chadolbagi', 'Thinly sliced beef brisket', 185, 5, 'Chadolbagi Meal.jpg'),
-('Chapagetti', 'Korean-style instant noodles', 119, 5, 'Chapagetti.jpg'),
-('Cheesy Ramen', 'Creamy cheese-flavored ramen', 129, 5, 'Cheesy Ramen.jpg'),
-('Kimchi', 'Spicy fermented cabbage', 85, 5, 'Kimchi.jpg'),
-('Nori(Seaweed)', 'Crispy roasted seaweed', 40, 5, 'Nori(Seaweed.jpg'),
-('Ramyun Special', 'Loaded Korean instant ramen', 139, 5, 'Ramyun Special.jpg'),
-('Samgyupsal Meal', 'Grilled pork belly slices', 165, 5, 'Samgyupsal Meal.jpg'),
-('Samyang', 'Spicy Korean instant noodles', 139, 5, 'Samyang.jpg');
