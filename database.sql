@@ -105,7 +105,7 @@ INSERT INTO products (name, description, price, category_id, image) VALUES
 ('Cornbeef', 'Savory canned cornbeef', 180, 4, 'cornbeef.jpg'),
 ('Hungarian Sausage', 'Spicy smoked sausage', 180, 4, 'sausage.jpg'),
 ('Pepper Beef', 'Tender beef with pepper', 190, 4, 'pepper.jpg'),
-('Spam', 'Classic canned meat', 180, 4, 'spam.jpg');
+('Spam', 'Classic canned meat', 180, 4, 'spam.jpg'),
 
 
 
