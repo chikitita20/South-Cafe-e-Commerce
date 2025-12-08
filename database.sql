@@ -108,3 +108,12 @@ INSERT INTO products (name, description, price, category_id, image) VALUES
 ('Spam', 'Classic canned meat', 180, 4, 'spam.jpg');
 
 
+
+('Chadolbagi', 'Thinly sliced beef brisket', 185, 5, 'Chadolbagi Meal.jpg'),
+('Chapagetti', 'Korean-style instant noodles', 119, 5, 'Chapagetti.jpg'),
+('Cheesy Ramen', 'Creamy cheese-flavored ramen', 129, 5, 'Cheesy Ramen.jpg'),
+('Kimchi', 'Spicy fermented cabbage', 85, 5, 'Kimchi.jpg'),
+('Nori(Seaweed)', 'Crispy roasted seaweed', 40, 5, 'Nori(Seaweed.jpg'),
+('Ramyun Special', 'Loaded Korean instant ramen', 139, 5, 'Ramyun Special.jpg'),
+('Samgyupsal Meal', 'Grilled pork belly slices', 165, 5, 'Samgyupsal Meal.jpg'),
+('Samyang', 'Spicy Korean instant noodles', 139, 5, 'Samyang.jpg');
