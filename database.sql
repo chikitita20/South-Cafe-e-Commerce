@@ -98,7 +98,7 @@ INSERT INTO products (name, description, price, category_id, image) VALUES
 ('Grilled Cheese Sandwich', 'Melted cheese between toasted bread', 135.00, 3, 'grilledcheese.jpg'),
 ('Nachos Overload', 'Tortilla chips topped with cheese, jalapenos, and more', 145.00, 3, 'nachos.jpg'),
 ('Potato Wedges', 'Seasoned potato wedges', 135.00, 3, 'potato.jpg'),
-('Special Clubhouse Sandwich', 'Deluxe club sandwich with extra fillings', 265.00, 3, 'special.jpg');
+('Special Clubhouse Sandwich', 'Deluxe club sandwich with extra fillings', 265.00, 3, 'special.jpg'),
 
 
 
