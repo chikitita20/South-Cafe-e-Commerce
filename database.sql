@@ -88,12 +88,19 @@ INSERT INTO products (name, description, price, category_id, image) VALUES
 ('Green Tea', 'Premium green tea', 3.00, 2, 'green_tea.jpg'),
 ('Chai Latte', 'Spiced tea with steamed milk', 4.25, 2, 'chai_latte.jpg'),
 ('Croissant', 'Buttery, flaky croissant', 3.25, 3, 'croissant.jpg'),
-('Chocolate Muffin', 'Rich chocolate chip muffin', 3.75, 3, 'muffin.jpg'),
+('Egg Drop Sandwich', 'Toasted bread filled with fluffy eggs and cheese', 115.00, 3, 'eggdrop.jpg'),
 ('Club Sandwich', 'Triple-decker sandwich with turkey, bacon, and veggies', 8.50, 4, 'club_sandwich.jpg'),
 ('BLT Sandwich', 'Classic bacon, lettuce, and tomato', 7.00, 4, 'blt.jpg'),
 ('Cheesecake', 'Creamy New York style cheesecake', 5.50, 5, 'cheesecake.jpg'),
 ('Brownie', 'Fudgy chocolate brownie', 4.00, 5, 'brownie.jpg'),
 ('American Waffle', 'Crispy waffle served with syrup', 95.00, 3, 'americanwaffle.jpg'),
 ('Chicken Poppers', 'Crispy fried chicken bites', 155.00, 3, 'chickenpoppers.jpg'),
-('Clubhouse Sandwich', 'Triple-layered sandwich with assorted fillings', 165.00, 3, 'clubhousesandwich.jpg');
+('Clubhouse Sandwich', 'Triple-layered sandwich with assorted fillings', 165.00, 3, 'clubhousesandwich.jpg'),
+('French Fries', 'Golden crispy fries', 70.00, 3, 'fries.jpg'),
+('Fries Overload', 'Loaded fries with cheese and bacon', 155.00, 3, 'overloadfries.jpg'),
+('Grilled Cheese Sandwich', 'Melted cheese between toasted bread', 135.00, 3, 'grilledcheese.jpg'),
+('Nachos Overload', 'Tortilla chips topped with cheese, jalapenos, and more', 145.00, 3, 'nachos.jpg'),
+('Potato Wedges', 'Seasoned potato wedges', 135.00, 3, 'potato.jpg'),
+('Special Clubhouse Sandwich', 'Deluxe club sandwich with extra fillings', 265.00, 3, 'special.jpg');
+
 
