@@ -77,7 +77,7 @@ include 'includes/header.php';
                         <div class="cart-item-details">
                             <h3><?php echo htmlspecialchars($item['name']); ?></h3>
                             <p><?php echo htmlspecialchars($item['description']); ?></p>
-                            <p class="price">$<?php echo number_format($item['price'], 2); ?></p>
+                            <p class="price">₱<?php echo number_format($item['price'], 2); ?></p>
                         </div>
                         <div class="cart-item-actions">
                             <form method="POST" action="cart.php" class="cart-form">
@@ -87,7 +87,7 @@ include 'includes/header.php';
                                 <button type="submit" name="update_cart" class="btn btn-small">Update</button>
                                 <button type="submit" name="remove_item" class="btn btn-small btn-danger">Remove</button>
                             </form>
-                            <p class="subtotal">Subtotal: $<?php echo number_format($item['price'] * $item['quantity'], 2); ?></p>
+                            <p class="subtotal">Subtotal: ₱<?php echo number_format($item['price'] * $item['quantity'], 2); ?></p>
                         </div>
                     </div>
                 <?php endforeach; ?>
@@ -97,15 +97,15 @@ include 'includes/header.php';
                 <h3>Order Summary</h3>
                 <div class="summary-row">
                     <span>Subtotal:</span>
-                    <span>$<?php echo number_format($total, 2); ?></span>
+                    <span>₱<?php echo number_format($total, 2); ?></span>
                 </div>
                 <div class="summary-row">
                     <span>Delivery Fee:</span>
-                    <span>$5.00</span>
+                    <span>₱5.00</span>
                 </div>
                 <div class="summary-row total">
                     <span>Total:</span>
-                    <span>$<?php echo number_format($total + 5, 2); ?></span>
+                    <span>₱<?php echo number_format($total + 5, 2); ?></span>
                 </div>
                 <a href="checkout.php" class="btn btn-primary btn-block">Proceed to Checkout</a>
                 <a href="menu.php" class="btn btn-secondary btn-block">Continue Shopping</a>

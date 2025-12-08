@@ -126,7 +126,7 @@ include 'includes/header.php';
                     <?php foreach ($cart_items as $item): ?>
                         <div class="order-item-preview">
                             <span><?php echo htmlspecialchars($item['name']); ?> x<?php echo $item['quantity']; ?></span>
-                            <span>$<?php echo number_format($item['price'] * $item['quantity'], 2); ?></span>
+                            <span>₱<?php echo number_format($item['price'] * $item['quantity'], 2); ?></span>
                         </div>
                     <?php endforeach; ?>
                 </div>
@@ -134,15 +134,15 @@ include 'includes/header.php';
                 <div class="checkout-summary">
                     <div class="summary-row">
                         <span>Subtotal:</span>
-                        <span>$<?php echo number_format($subtotal, 2); ?></span>
+                        <span>₱<?php echo number_format($subtotal, 2); ?></span>
                     </div>
                     <div class="summary-row">
                         <span>Delivery Fee:</span>
-                        <span>$<?php echo number_format($delivery_fee, 2); ?></span>
+                        <span>₱<?php echo number_format($delivery_fee, 2); ?></span>
                     </div>
                     <div class="summary-row total">
                         <span>Total:</span>
-                        <span>$<?php echo number_format($total, 2); ?></span>
+                        <span>₱<?php echo number_format($total, 2); ?></span>
                     </div>
                 </div>
                 
