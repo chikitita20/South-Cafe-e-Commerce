@@ -81,12 +81,12 @@ INSERT INTO categories (name, description) VALUES
 
 -- Insert sample products
 INSERT INTO products (name, description, price, category_id, image) VALUES
-('Hot Coffee', 'Rich and bold espresso shot', 3.50, 1, 'hotcoffee.jpg'),
-('Cappuccino', 'Espresso with steamed milk and foam', 4.50, 1, 'cappuccino.jpg'),
-('Latte', 'Smooth espresso with steamed milk', 4.75, 1, 'latte.jpg'),
-('Iced Coffee', 'Refreshing cold brew coffee', 4.00, 1, 'iced_coffee.jpg'),
-('Green Tea', 'Premium green tea', 3.00, 2, 'green_tea.jpg'),
-('Chai Latte', 'Spiced tea with steamed milk', 4.25, 2, 'chai_latte.jpg'),
+('Hot Coffee', 'Rich and bold espresso shot', 70, 1, 'hotcoffee.jpg'),
+('Cappuccino', 'Espresso with steamed milk and foam', 75, 1, 'cappuccino.jpg'),
+('Latte', 'Smooth espresso with steamed milk', 95, 1, 'latte.jpg'),
+('Iced Coffee', 'Refreshing cold brew coffee', 85, 1, 'iced_coffee.jpg'),
+('Green Tea', 'Premium green tea', 150, 2, 'green_tea.jpg'),
+
 ('Egg Drop Sandwich', 'Toasted bread filled with fluffy eggs and cheese', 115.00, 3, 'eggdrop.jpg'),
 ('Club Sandwich', 'Triple-decker sandwich with turkey, bacon, and veggies', 8.50, 4, 'club_sandwich.jpg'),
 ('BLT Sandwich', 'Classic bacon, lettuce, and tomato', 7.00, 4, 'blt.jpg'),
