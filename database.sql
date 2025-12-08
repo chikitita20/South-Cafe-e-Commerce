@@ -88,10 +88,6 @@ INSERT INTO products (name, description, price, category_id, image) VALUES
 ('Green Tea', 'Premium green tea', 150, 2, 'green_tea.jpg'),
 
 ('Egg Drop Sandwich', 'Toasted bread filled with fluffy eggs and cheese', 115.00, 3, 'eggdrop.jpg'),
-('Club Sandwich', 'Triple-decker sandwich with turkey, bacon, and veggies', 8.50, 4, 'club_sandwich.jpg'),
-('BLT Sandwich', 'Classic bacon, lettuce, and tomato', 7.00, 4, 'blt.jpg'),
-('Cheesecake', 'Creamy New York style cheesecake', 5.50, 5, 'cheesecake.jpg'),
-('Brownie', 'Fudgy chocolate brownie', 4.00, 5, 'brownie.jpg'),
 ('American Waffle', 'Crispy waffle served with syrup', 95.00, 3, 'americanwaffle.jpg'),
 ('Chicken Poppers', 'Crispy fried chicken bites', 155.00, 3, 'chickenpoppers.jpg'),
 ('Clubhouse Sandwich', 'Triple-layered sandwich with assorted fillings', 165.00, 3, 'clubhousesandwich.jpg'),
