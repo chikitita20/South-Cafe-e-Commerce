@@ -77,7 +77,7 @@ include 'includes/header.php';
                         <div class="cart-item-details">
                             <h3><?php echo htmlspecialchars($item['name']); ?></h3>
                             <p><?php echo htmlspecialchars($item['description']); ?></p>
-                            <p class="price">₱<?php echo number_format($item['price'], 2); ?></p>
+                            <p class="price">PHP<?php echo number_format($item['price'], 2); ?></p>
                         </div>
                         <div class="cart-item-actions">
                             <form method="POST" action="cart.php" class="cart-form">
@@ -87,7 +87,7 @@ include 'includes/header.php';
                                 <button type="submit" name="update_cart" class="btn btn-small">Update</button>
                                 <button type="submit" name="remove_item" class="btn btn-small btn-danger">Remove</button>
                             </form>
-                            <p class="subtotal">Subtotal: ₱<?php echo number_format($item['price'] * $item['quantity'], 2); ?></p>
+                            <p class="subtotal">Subtotal: PHP<?php echo number_format($item['price'] * $item['quantity'], 2); ?></p>
                         </div>
                     </div>
                 <?php endforeach; ?>

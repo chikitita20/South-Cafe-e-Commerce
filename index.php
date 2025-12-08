@@ -33,7 +33,7 @@ include 'includes/header.php';
                         <h3><?php echo htmlspecialchars($product['name']); ?></h3>
                         <p class="product-description"><?php echo htmlspecialchars($product['description']); ?></p>
                         <div class="product-footer">
-                            <span class="price">₱<?php echo number_format($product['price'], 2); ?></span>
+                            <span class="price">PHP<?php echo number_format($product['price'], 2); ?></span>
                             <a href="menu.php" class="btn btn-small btn-primary">View Menu</a>
                         </div>
                     </div>
