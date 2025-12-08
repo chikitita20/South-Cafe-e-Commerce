@@ -81,11 +81,11 @@ INSERT INTO categories (name, description) VALUES
 
 -- Insert sample products
 INSERT INTO products (name, description, price, category_id, image) VALUES
-('Hot Coffee', 'Rich and bold espresso shot', 70, 1, 'hotcoffee.jpg'),
-('Cappuccino', 'Espresso with steamed milk and foam', 75, 1, 'cappuccino.jpg'),
+('Hot Coffee', 'Rich and bold espresso shot', 75, 1, 'hot_coffee.jpg'),
+('Iced Coffee', 'Cold, rich chocolate drink delight', 85, 1, 'iced_coffee.jpg'),
 ('Latte', 'Smooth espresso with steamed milk', 95, 1, 'latte.jpg'),
-('Iced Coffee', 'Refreshing cold brew coffee', 85, 1, 'iced_coffee.jpg'),
-('Green Tea', 'Premium green tea', 150, 2, 'green_tea.jpg'),
+('Mango Graham', 'Refreshing cold brew coffee', 85, 2, 'mango_graham.jpg'),
+('Iced Choco', 'Premium green tea', 65, 2, 'iced_choco.jpg'),
 
 ('Egg Drop Sandwich', 'Toasted bread filled with fluffy eggs and cheese', 115.00, 3, 'eggdrop.jpg'),
 ('Cheesecake', 'Creamy New York style cheesecake', 5.50, 5, 'cheesecake.jpg'),
@@ -106,3 +106,5 @@ INSERT INTO products (name, description, price, category_id, image) VALUES
 ('Hungarian Sausage', 'Spicy smoked sausage', 180, 4, 'sausage.jpg'),
 ('Pepper Beef', 'Tender beef with pepper', 190, 4, 'pepper.jpg'),
 ('Spam', 'Classic canned meat', 180, 4, 'spam.jpg');
+
+
